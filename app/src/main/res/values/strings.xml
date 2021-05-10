@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Movee</string>
+    <string name="movies">Movies</string>
+    <string name="tv_shows">TV Shows</string>
+    <string name="duration">Duration:</string>
+    <string name="director">Director:</string>
+    <string name="genre">Genre</string>
+    <string name="synopsis">Synopsis</string>
+    <string name="release_date">Release Date</string>
+    <string name="director_details">Director</string>
+    <string name="movies_and_tv_shows_list"><![CDATA[Movies & TV Shows List]]></string>
+</resources>

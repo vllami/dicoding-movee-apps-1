@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="18dp"
+    android:layout_marginBottom="18dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:foreground="@drawable/bg_ripple_white"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_poster"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/bg_shadow"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription"
+        tools:src="@drawable/tv_shows_the_umbrella_academy" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="18dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/muli_extrabold"
+        android:lineSpacingExtra="2.5dp"
+        android:maxLines="3"
+        android:textColor="@color/colorDarkGray"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/star"
+        app:layout_constraintStart_toEndOf="@+id/img_poster"
+        app:layout_constraintTop_toTopOf="@+id/cardview"
+        tools:text="The Umbrella Academy" />
+
+    <ImageView
+        android:id="@+id/star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="7dp"
+        android:src="@drawable/ic_rating"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_rating"
+        app:layout_constraintEnd_toStartOf="@+id/tv_rating"
+        app:layout_constraintTop_toTopOf="@+id/tv_rating"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tv_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="17dp"
+        android:fontFamily="@font/muli_extrabold"
+        android:textColor="@color/colorDarkGray"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardview"
+        tools:text="8.0" />
+
+    <TextView
+        android:id="@+id/duration"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="2.5dp"
+        android:fontFamily="@font/muli_bold"
+        android:text="@string/duration"
+        android:textColor="@color/colorDarkGray"
+        android:textSize="12.5sp"
+        app:layout_constraintBottom_toTopOf="@+id/director"
+        app:layout_constraintStart_toEndOf="@+id/img_poster" />
+
+    <TextView
+        android:id="@+id/tv_duration"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="17dp"
+        android:fontFamily="@font/muli"
+        android:textColor="@color/colorDarkGray"
+        android:textSize="12.5sp"
+        app:layout_constraintBottom_toBottomOf="@+id/duration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/duration"
+        app:layout_constraintTop_toTopOf="@+id/duration"
+        tools:text="55m" />
+
+    <TextView
+        android:id="@+id/director"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/muli_bold"
+        android:text="@string/director"
+        android:textColor="@color/colorDarkGray"
+        android:textSize="12.5sp"
+        app:layout_constraintStart_toStartOf="@+id/duration"
+        app:layout_constraintTop_toTopOf="@+id/tv_owner" />
+
+    <TextView
+        android:id="@+id/tv_owner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/muli"
+        android:lineSpacingExtra="2.5dp"
+        android:maxLines="3"
+        android:textColor="@color/colorDarkGray"
+        android:textSize="12.5sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv_duration"
+        app:layout_constraintStart_toEndOf="@+id/director"
+        tools:text="Steve Blackman" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
